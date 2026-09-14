@@ -121,10 +121,27 @@ HTML = """<!DOCTYPE html>
         .why-card-content h3 { font-size: 16.5px; font-weight: 800; color: #0f172a; margin: 0 0 6px 0; }
         .why-card-content p { font-size: 13px; color: #64748b; line-height: 1.5; margin: 0; }
 
+    
+        .nav-wrap { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; max-width: 1100px; margin: 0 auto; }
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+        .nav-links a { color: #475569; font-weight: 600; font-size: 13.5px; text-decoration: none; transition: 0.2s; }
+        .nav-links a:hover { color: #0284c7; }
+        
+        .guides-container { padding: 40px 16px; max-width: 1100px; margin: 0 auto; }
+        .guides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 26px; }
+        .guide-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 18px rgba(15,23,42,0.04); transition: transform 0.25s ease, box-shadow 0.25s ease; display: flex; flex-direction: column; }
+        .guide-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(2, 132, 199, 0.09); border-color: #bae6fd; }
+        .guide-card-body { padding: 22px; display: flex; flex-direction: column; flex-grow: 1; }
+        .guide-date { font-size: 11px; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+        .guide-card-body h3 { font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1.4; margin-bottom: 10px; letter-spacing: -0.3px; }
+        .guide-card-body p { font-size: 13.5px; color: #64748b; line-height: 1.6; margin-bottom: 18px; flex-grow: 1; }
+        .guide-read-link { font-size: 13.5px; font-weight: 800; color: #e11d48; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s ease; }
+        .guide-read-link:hover { gap: 10px; }
+
     </style>
 </head>
 <body>
-    <nav><div class="container nav-wrap"><a href="/" class="logo-wrap">
+    <nav><div class="nav-wrap"><a href="/" class="logo-wrap">
             <div class="logo-img-box">
                 <img src="/logo2.png" alt="BiliSave Logo">
             </div>
