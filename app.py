@@ -612,6 +612,28 @@ HTML = """<!DOCTYPE html>
 }
 </script>
 
+
+<!-- Connect With Creator Section -->
+<section class="creator-box-section">
+    <div class="creator-connect-card">
+        <span class="creator-pill">CONNECT WITH CREATOR</span>
+        <div class="creator-avatar-badge">🎨</div>
+        <div class="creator-name">Dharshan Studio</div>
+        <div class="creator-bio">Creative Design & Tech Labs</div>
+        <div class="creator-links-row">
+            <a href="https://www.instagram.com/_.pavi.rls________?stkn=MXFwdTd0ZTY0am4xbw==" target="_blank" rel="noopener" class="creator-btn">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.threads.com/@_.pavi.rls________" target="_blank" rel="noopener" class="creator-btn">
+                <i class="fa-brands fa-threads"></i> Threads
+            </a>
+        </div>
+        <a href="mailto:pavanibevara045@gmail.com" class="creator-btn creator-btn-full">
+            <i class="fa-regular fa-envelope"></i> Support
+        </a>
+    </div>
+</section>
+
 <footer>
         <div class="container" style="text-align:center;">
             <div class="foot-links">
