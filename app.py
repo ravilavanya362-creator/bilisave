@@ -138,6 +138,27 @@ HTML = """<!DOCTYPE html>
         .guide-read-link { font-size: 13.5px; font-weight: 800; color: #e11d48; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s ease; }
         .guide-read-link:hover { gap: 10px; }
 
+    
+        .articles-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 16px; }
+        .articles-head { text-align: center; margin-bottom: 30px; }
+        .articles-head h2 { font-size: 28px; font-weight: 900; color: #0f172a; margin-bottom: 6px; }
+        .articles-head p { font-size: 14px; color: #64748b; margin: 0; }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .art-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 16px rgba(15,23,42,0.04); display: flex; flex-direction: column; transition: all 0.25s ease; }
+        .art-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(2,132,199,0.1); border-color: #7dd3fc; }
+        .art-banner { height: 130px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; position: relative; color: #fff; }
+        .art-badge-row { display: flex; justify-content: space-between; align-items: center; }
+        .art-pill { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); }
+        .art-icon-circle { width: 34px; height: 34px; border-radius: 10px; background: rgba(255,255,255,0.25); display: flex; align-items: center; justify-content: center; font-size: 15px; }
+        .art-banner-sub { font-size: 12px; font-weight: 700; opacity: 0.95; }
+        
+        .art-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .art-date { font-size: 11px; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+        .art-body h3 { font-size: 17px; font-weight: 800; color: #0f172a; line-height: 1.4; margin-bottom: 8px; }
+        .art-body p { font-size: 13px; color: #64748b; line-height: 1.6; margin-bottom: 16px; flex-grow: 1; }
+        .art-link { font-size: 13px; font-weight: 800; color: #e11d48; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+        .art-link:hover { text-decoration: underline; }
+
     </style>
 </head>
 <body>
@@ -248,7 +269,135 @@ HTML = """<!DOCTYPE html>
             <div class="article-card"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600"><div><h4>Safe Online Video Downloading</h4><p>Why direct encrypted CDN tunneling prevents intrusive redirects.</p></div></div>
         </div>
     </div>
-    <footer>
+    
+<section class="articles-wrap">
+    <div class="articles-head">
+        <h2>Guides & Tutorials</h2>
+        <p>Everything you need to master Bilibili media streaming, downloading, and formats.</p>
+    </div>
+    <div class="articles-grid">
+        <!-- Article 1 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #0284c7, #2563eb);">
+                <div class="art-badge-row">
+                    <span class="art-pill">HD Video Guide</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-film"></i></div>
+                </div>
+                <div class="art-banner-sub">Crystal clear 1080p & 4K streaming</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Sep 12, 2026</span>
+                <h3>How to Download Bilibili Videos in 1080p HD (No Watermark)</h3>
+                <p>Complete step-by-step walkthrough to extract pristine 1080p MP4 videos with direct audio-video sync on PC and mobile.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #d946ef, #8b5cf6);">
+                <div class="art-badge-row">
+                    <span class="art-pill">Anime & Clips</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+                </div>
+                <div class="art-banner-sub">High FPS & Smooth Bitrates</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Sep 08, 2026</span>
+                <h3>Save Bilibili Anime Clips & Shorts in 60FPS Smooth Motion</h3>
+                <p>Learn how content creators capture high-framerate action highlights and viral dance clips for editing without lag.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                <div class="art-badge-row">
+                    <span class="art-pill">Audio Guide</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-headphones"></i></div>
+                </div>
+                <div class="art-banner-sub">Extract high-fidelity MP3 sound</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Sep 01, 2026</span>
+                <h3>Bilibili to MP3: How to Extract Clean Audio Streams</h3>
+                <p>Looking for a background OST or podcast? Discover how to save standalone 320kbps audio tracks in seconds.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">
+                <div class="art-badge-row">
+                    <span class="art-pill">Troubleshooting</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+                </div>
+                <div class="art-banner-sub">Bypass region restrictions & errors</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Aug 24, 2026</span>
+                <h3>Fixing Common Bilibili Link Errors & Regional Blocks</h3>
+                <p>Solve b23.tv shortlink redirection issues and learn how overseas viewers access geo-restricted tutorials.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #10b981, #059669);">
+                <div class="art-badge-row">
+                    <span class="art-pill">Subtitles & CC</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-closed-captioning"></i></div>
+                </div>
+                <div class="art-banner-sub">Export multi-language translations</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Aug 18, 2026</span>
+                <h3>How to Download Bilibili Subtitles (SRT / CC)</h3>
+                <p>Easily rip Chinese and translated English subtitles alongside video files for language learning and documentation.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #6366f1, #4338ca);">
+                <div class="art-badge-row">
+                    <span class="art-pill">Speed & Tools</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-layer-group"></i></div>
+                </div>
+                <div class="art-banner-sub">Top 5 online tool comparison</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Aug 10, 2026</span>
+                <h3>Top 5 Bilibili Video Downloaders: 2026 Comprehensive Review</h3>
+                <p>An in-depth performance, security, and bitrate analysis comparing web extractors against software downloaders.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="art-card">
+            <div class="art-banner" style="background: linear-gradient(135deg, #ef4444, #be123c);">
+                <div class="art-badge-row">
+                    <span class="art-pill">Safety & Ethics</span>
+                    <div class="art-icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+                </div>
+                <div class="art-banner-sub">Fair-use and copyright compliance</div>
+            </div>
+            <div class="art-body">
+                <span class="art-date">Aug 05, 2026</span>
+                <h3>Downloading Videos Responsibly: Fair-Use Creator Guide</h3>
+                <p>A quick guide on ethical media archiving, copyright boundaries, and giving proper creator credits in creative remixes.</p>
+                <a href="#" class="art-link">Read full article &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
         <div class="container" style="text-align:center;">
             <div class="foot-links">
                 <a href="#">Privacy Policy</a>
