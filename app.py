@@ -74,6 +74,12 @@ HTML = """<!DOCTYPE html>
         .brand-save { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-left: 2px; }
         .brand-pill { margin-left: 8px; font-size: 10px; font-weight: 800; background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.8px; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3); text-transform: uppercase; }
 
+    
+        .hero h1 { font-size: 34px; font-weight: 900; line-height: 1.2; letter-spacing: -1px; margin: 0 auto 14px; max-width: 820px; }
+        .hero-gradient-text { background: linear-gradient(135deg, #0284c7 0%, #38bdf8 50%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0 2px 8px rgba(2, 132, 199, 0.2)); }
+        .hero-sub { color: #475569; font-size: 15px; font-weight: 500; max-width: 620px; margin: 0 auto 26px; }
+        .hero-badge { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 800; font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; margin-bottom: 16px; display: inline-flex; align-items: center; gap: 6px; }
+
     </style>
 </head>
 <body>
@@ -88,9 +94,9 @@ HTML = """<!DOCTYPE html>
         </a></div></nav>
     <section class="hero">
         <div class="container">
-            <div class="hero-badge">Fastest Free Bilibili Video Downloader</div>
-            <h1>Download Bilibili Videos in 1080p HD MP4</h1>
-            <p>Save viral clips, anime highlights, and educational tutorials without watermark.</p>
+            <div class="hero-badge"><i class="fa-solid fa-bolt"></i> Fastest Bilibili Video Downloader</div>
+            <h1>Download Bilibili Videos <br><span class="hero-gradient-text">in Ultra 1080p HD & MP4</span></h1>
+            <p class="hero-sub">Save viral clips, anime highlights, and full audio at blazing-fast CDN speeds — completely free and watermark-free.</p>
             <div class="card-box">
                 <div class="input-row">
                     <div class="input-wrap">
