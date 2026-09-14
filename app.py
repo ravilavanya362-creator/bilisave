@@ -90,6 +90,18 @@ HTML = """<!DOCTYPE html>
         .tip-chip:hover { background:#f59e0b; color:#fff; }
         .btn-bmc { display:inline-flex; align-items:center; justify-content:center; gap:8px; background:#ffdd00; color:#000; font-weight:800; font-size:13px; padding:10px 18px; border-radius:8px; text-decoration:none; box-shadow:0 3px 8px rgba(0,0,0,0.1); }
 
+    
+        .creator-section { padding: 40px 0; }
+        .creator-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 25px; }
+        .creator-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 24px; position: relative; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03); display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+        .creator-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(2, 132, 199, 0.08); border-color: #bae6fd; }
+        .card-icon-wrap { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 18px; }
+        .icon-blue { background: #eff6ff; color: #2563eb; }
+        .icon-purple { background: #faf5ff; color: #9333ea; }
+        .icon-orange { background: #fff7ed; color: #ea580c; }
+        .creator-card h3 { font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.3px; }
+        .creator-card p { font-size: 13.5px; color: #64748b; line-height: 1.6; margin: 0; }
+
     </style>
 </head>
 <body>
@@ -138,13 +150,28 @@ HTML = """<!DOCTYPE html>
         </div>
     </section>
     <div class="container">
-        <div class="sec-title"><h2>Built for Every Creator</h2><p>Designed for learning, analyzing, and content creation.</p></div>
-        <div class="grid-3">
-            <div class="grid-card"><h3>Students & Learners</h3><p>Save full-length tutorials and computer courses for offline study without data loss.</p></div>
-            <div class="grid-card"><h3>Researchers & Analysts</h3><p>Archive tech keynotes, AI demonstrations, and public trends in high bitrates.</p></div>
-            <div class="grid-card"><h3>Content Creators</h3><p>Extract viral 60FPS references, dance choreography, and anime scenes for reaction edits.</p></div>
-        </div>
-        <div class="sec-title"><h2>Why Choose BiliSnap HD</h2><p>SEO Optimized, fast buffering, and completely free.</p></div>
+        <div class="sec-title">
+                <h2 style="font-size:28px;font-weight:900;letter-spacing:-0.5px;">Built for Every Creator</h2>
+                <p style="color:#64748b;font-size:14px;margin-top:6px;">Engineered for seamless offline learning, research archiving, and editing workflows.</p>
+            </div>
+            <div class="creator-grid">
+                <div class="creator-card">
+                    <div class="card-icon-wrap icon-blue"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Students & Learners</h3>
+                    <p>Save full-length tutorials, coding lectures, and language courses for continuous offline study with crisp crystal audio.</p>
+                </div>
+                <div class="creator-card">
+                    <div class="card-icon-wrap icon-purple"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Researchers & Tech Analysts</h3>
+                    <p>Archive breakthrough tech keynotes, AI demonstrations, and overseas industry developments at lossless bitrates.</p>
+                </div>
+                <div class="creator-card">
+                    <div class="card-icon-wrap icon-orange"><i class="fa-solid fa-video"></i></div>
+                    <h3>Content Creators & Editors</h3>
+                    <p>Extract trending 60FPS dynamic choreography, gaming clips, and anime scenes for sharp reaction edits and remixes.</p>
+                </div>
+            </div>
+        <div class="sec-title"><h2>Why Choose BiliSave HD</h2><p>SEO Optimized, fast buffering, and completely free.</p></div>
         <div class="grid-3">
             <div class="grid-card"><h3>High-Speed 4MB Pipeline</h3><p>Direct buffer pipelines ensure maximum download speeds with zero timeouts.</p></div>
             <div class="grid-card"><h3>100% Free & Unlimited</h3><p>Download as many video clips and tutorials as you need with no subscriptions.</p></div>
