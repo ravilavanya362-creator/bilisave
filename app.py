@@ -457,7 +457,7 @@ HTML = """<!DOCTYPE html>
     </div>
     
     <div class="faq-list">
-        <details class="faq-item" open>
+        <details class="faq-item">
             <summary class="faq-question">How do I download Bilibili videos in 1080p HD?</summary>
             <div class="faq-answer">
                 Simply copy the video URL from Bilibili (web or app), paste it into the search box above, and click <strong>Get Download Link</strong>. BiliSave automatically processes the stream and gives you a direct, high-speed 1080p HD MP4 download link with original synced audio.
