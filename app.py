@@ -106,6 +106,21 @@ HTML = """<!DOCTYPE html>
         .creator-card h3 { font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.3px; }
         .creator-card p { font-size: 13.5px; color: #64748b; line-height: 1.6; margin: 0; }
 
+    
+        .why-section { padding: 45px 0 20px; }
+        .why-title-wrap { text-align: center; margin-bottom: 28px; }
+        .why-title-wrap h2 { font-size: 28px; font-weight: 900; letter-spacing: -0.6px; color: #0f172a; margin-bottom: 6px; }
+        .why-title-wrap p { font-size: 14px; color: #64748b; margin: 0; }
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+        .why-card { background: #ffffff; border: 1.5px solid #f1f5f9; border-radius: 16px; padding: 22px; display: flex; gap: 16px; align-items: flex-start; transition: all 0.25s ease; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03); }
+        .why-card:hover { transform: translateY(-3px); border-color: #38bdf8; box-shadow: 0 10px 25px rgba(2, 132, 199, 0.08); }
+        .why-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+        .w-icon-blue { background: #e0f2fe; color: #0284c7; }
+        .w-icon-green { background: #dcfce7; color: #16a34a; }
+        .w-icon-amber { background: #fef3c7; color: #d97706; }
+        .why-card-content h3 { font-size: 16.5px; font-weight: 800; color: #0f172a; margin: 0 0 6px 0; }
+        .why-card-content p { font-size: 13px; color: #64748b; line-height: 1.5; margin: 0; }
+
     </style>
 </head>
 <body>
@@ -179,12 +194,33 @@ HTML = """<!DOCTYPE html>
                     <p>Extract trending 60FPS dynamic choreography, gaming clips, and anime scenes for sharp reaction edits and remixes.</p>
                 </div>
             </div>
-        <div class="sec-title"><h2>Why Choose BiliSave HD</h2><p>SEO Optimized, fast buffering, and completely free.</p></div>
-        <div class="grid-3">
-            <div class="grid-card"><h3>High-Speed 4MB Pipeline</h3><p>Direct buffer pipelines ensure maximum download speeds with zero timeouts.</p></div>
-            <div class="grid-card"><h3>100% Free & Unlimited</h3><p>Download as many video clips and tutorials as you need with no subscriptions.</p></div>
-            <div class="grid-card"><h3>Original Audio & HD</h3><p>Get original quality video streams with clear synced sound.</p></div>
-        </div>
+        <div class="why-title-wrap">
+                <h2>Why Choose BiliSave HD</h2>
+                <p>Engineered for maximum reliability, high bitrates, and zero popups.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon w-icon-blue"><i class="fa-solid fa-gauge-high"></i></div>
+                    <div class="why-card-content">
+                        <h3>Ultra-Fast Buffer Pipeline</h3>
+                        <p>Direct chunk-stream tunnels deliver maximum throughput with immediate playback and zero server timeouts.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon w-icon-green"><i class="fa-solid fa-infinity"></i></div>
+                    <div class="why-card-content">
+                        <h3>100% Free & Unlimited</h3>
+                        <p>No paywalls, subscriptions, or daily limits. Download as many videos, tutorials, and clips as you need.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon w-icon-amber"><i class="fa-solid fa-headphones-simple"></i></div>
+                    <div class="why-card-content">
+                        <h3>Original Audio & Lossless HD</h3>
+                        <p>Maintains source audio-video sync with crystal clarity up to 1080p without any aggressive recompression.</p>
+                    </div>
+                </div>
+            </div>
         <div class="sec-title"><h2>Trending Guides & Bilibili Insights</h2><p>Latest articles and media tips.</p></div>
         <div class="grid-3">
             <div class="article-card"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600"><div><h4>Saving Exclusive Anime Overseas</h4><p>How fans watch and store official animations for flight trips.</p></div></div>
