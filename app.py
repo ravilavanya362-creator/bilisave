@@ -15,7 +15,7 @@ HTML = """<!DOCTYPE html>
     <link rel="icon" type="image/png" href="/logo2.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiliSave - Best Free Bilibili Video Downloader Online (HD & MP4)</title>
+    <title>BiliSnap HD - Best Free Bilibili Video Downloader Online (HD & MP4)</title>
     <meta name="description" content="Download Bilibili videos in 1080p, 4K MP4 for free. Fast, high-speed Bilibili video saver for creators, students, and anime lovers.">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -58,10 +58,16 @@ HTML = """<!DOCTYPE html>
         footer { background:#0f172a; color:#94a3b8; padding:45px 0 25px; margin-top:70px; font-size:14px; }
         .foot-links { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-bottom:20px; }
         .foot-links a { color:#cbd5e1; text-decoration:none; }
+    
+        .logo-text { font-size:22px; font-weight:800; letter-spacing:-0.5px; display:inline-flex; align-items:center; gap:6px; }
+        .logo-text .main-part { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .logo-text .sub-part { color: #0f172a; font-weight:800; }
+        .logo-badge { font-size:10px; font-weight:800; background: linear-gradient(135deg, #f97316, #ea580c); color:#fff; padding:2px 6px; border-radius:6px; text-transform:uppercase; letter-spacing:0.8px; }
+
     </style>
 </head>
 <body>
-    <nav><div class="container nav-wrap"><a href="/" class="logo" style="display:flex;align-items:center;gap:10px;"><img src="/logo2.png" alt="BiliSave Logo" style="height:38px;width:38px;object-fit:contain;border-radius:8px;">Bili<span>Save</span></a></div></nav>
+    <nav><div class="container nav-wrap"><a href="/" class="logo" style="display:flex;align-items:center;gap:10px;"><img src="/logo2.png" alt="BiliSnap HD Logo" style="height:38px;width:38px;object-fit:contain;border-radius:8px;"><div class="logo-text"><span class="main-part">Bili</span><span class="sub-part">Snap</span><span class="logo-badge">HD</span></div></a></div></nav>
     <section class="hero">
         <div class="container">
             <div class="hero-badge">Fastest Free Bilibili Video Downloader</div>
@@ -94,7 +100,7 @@ HTML = """<!DOCTYPE html>
             <div class="grid-card"><h3>Researchers & Analysts</h3><p>Archive tech keynotes, AI demonstrations, and public trends in high bitrates.</p></div>
             <div class="grid-card"><h3>Content Creators</h3><p>Extract viral 60FPS references, dance choreography, and anime scenes for reaction edits.</p></div>
         </div>
-        <div class="sec-title"><h2>Why Choose BiliSave</h2><p>SEO Optimized, fast buffering, and completely free.</p></div>
+        <div class="sec-title"><h2>Why Choose BiliSnap HD</h2><p>SEO Optimized, fast buffering, and completely free.</p></div>
         <div class="grid-3">
             <div class="grid-card"><h3>High-Speed 4MB Pipeline</h3><p>Direct buffer pipelines ensure maximum download speeds with zero timeouts.</p></div>
             <div class="grid-card"><h3>100% Free & Unlimited</h3><p>Download as many video clips and tutorials as you need with no subscriptions.</p></div>
@@ -118,7 +124,7 @@ HTML = """<!DOCTYPE html>
                 <a href="#">Terms of Service</a>
                 <a href="#">Contact Support</a>
             </div>
-            <p>&copy; 2026 BiliSave.com - Free Bilibili Video Downloader. All rights reserved.</p>
+            <p>&copy; 2026 BiliSnap HD.com - Free Bilibili Video Downloader. All rights reserved.</p>
         </div>
     </footer>
     <script>
