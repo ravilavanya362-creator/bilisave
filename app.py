@@ -127,11 +127,11 @@ HTML = """<!DOCTYPE html>
                     <div class="tip-title"><i class="fa-solid fa-mug-hot"></i> Fuel Our High-Speed Servers</div>
                     <p class="tip-sub">BiliSave is 100% free with zero ads. If this tool saved your time, consider buying us a coffee! ☕</p>
                     <div class="tip-amounts">
-                        <a href="https://buymeacoffee.com/bilisave" target="_blank" class="tip-chip"> Coffee</a>
-                        <a href="https://buymeacoffee.com/bilisave" target="_blank" class="tip-chip"> Server Boost</a>
-                        <a href="https://buymeacoffee.com/bilisave" target="_blank" class="tip-chip">0 Super Supporter</a>
+                        <a href="https://buymeacoffee.com/ravilavanyr" target="_blank" class="tip-chip"> Coffee</a>
+                        <a href="https://buymeacoffee.com/ravilavanyr" target="_blank" class="tip-chip"> Server Boost</a>
+                        <a href="https://buymeacoffee.com/ravilavanyr" target="_blank" class="tip-chip">0 Super Supporter</a>
                     </div>
-                    <a href="https://buymeacoffee.com/bilisave" target="_blank" class="btn-bmc"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="coffee" style="height:18px;"> Buy us a Coffee (PayPal / Card)</a>
+                    <a href="https://buymeacoffee.com/ravilavanyr" target="_blank" class="btn-bmc"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="coffee" style="height:18px;"> Buy us a Coffee (PayPal / Card)</a>
                 </div>
                 </div>
             </div>
