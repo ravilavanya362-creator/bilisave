@@ -270,6 +270,7 @@ HTML = """<!DOCTYPE html>
         </div>
     </div>
     
+
 <section class="articles-wrap">
     <div class="articles-head">
         <h2>Guides & Tutorials</h2>
@@ -396,6 +397,7 @@ HTML = """<!DOCTYPE html>
         </div>
     </div>
 </section>
+
 
 <footer>
         <div class="container" style="text-align:center;">
