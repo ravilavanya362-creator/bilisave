@@ -80,6 +80,16 @@ HTML = """<!DOCTYPE html>
         .hero-sub { color: #475569; font-size: 15px; font-weight: 500; max-width: 620px; margin: 0 auto 26px; }
         .hero-badge { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 800; font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; margin-bottom: 16px; display: inline-flex; align-items: center; gap: 6px; }
 
+    
+        .tip-container { display:none; margin-top:16px; padding:16px; background:linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border:1.5px dashed #f59e0b; border-radius:12px; text-align:center; animation:fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+        .tip-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:4px; display:flex; align-items:center; justify-content:center; gap:6px; }
+        .tip-sub { font-size:12px; color:#78350f; margin-bottom:12px; line-height:1.4; }
+        .tip-amounts { display:flex; justify-content:center; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+        .tip-chip { background:#fff; border:1px solid #fcd34d; padding:6px 14px; border-radius:999px; font-size:12.5px; font-weight:700; color:#b45309; text-decoration:none; box-shadow:0 2px 4px rgba(245,158,11,0.1); transition:0.2s; }
+        .tip-chip:hover { background:#f59e0b; color:#fff; }
+        .btn-bmc { display:inline-flex; align-items:center; justify-content:center; gap:8px; background:#ffdd00; color:#000; font-weight:800; font-size:13px; padding:10px 18px; border-radius:8px; text-decoration:none; box-shadow:0 3px 8px rgba(0,0,0,0.1); }
+
     </style>
 </head>
 <body>
@@ -112,7 +122,17 @@ HTML = """<!DOCTYPE html>
                 <div id="status"></div>
                 <div id="result-box">
                     <h4 id="vtitle" style="margin-bottom:8px;"></h4>
-                    <a href="" id="dllink" class="dl-btn">Download Video (MP4)</a>
+                    <a href="" id="dllink" class="dl-btn" onclick="showTipBox()">Download Video (MP4)</a>
+                <div id="tipBox" class="tip-container">
+                    <div class="tip-title"><i class="fa-solid fa-mug-hot"></i> Fuel Our High-Speed Servers</div>
+                    <p class="tip-sub">BiliSave is 100% free with zero ads. If this tool saved your time, consider buying us a coffee! ☕</p>
+                    <div class="tip-amounts">
+                        <a href="https://buymeacoffee.com/bilisave" target="_blank" class="tip-chip"> Coffee</a>
+                        <a href="https://buymeacoffee.com/bilisave" target="_blank" class="tip-chip"> Server Boost</a>
+                        <a href="https://buymeacoffee.com/bilisave" target="_blank" class="tip-chip">0 Super Supporter</a>
+                    </div>
+                    <a href="https://buymeacoffee.com/bilisave" target="_blank" class="btn-bmc"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="coffee" style="height:18px;"> Buy us a Coffee (PayPal / Card)</a>
+                </div>
                 </div>
             </div>
         </div>
@@ -160,6 +180,7 @@ HTML = """<!DOCTYPE html>
                 alert("Please paste manually into the box.");
             }
         }
+        function showTipBox() { setTimeout(() => { document.getElementById("tipBox").style.display = "block"; }, 600); }
         async function extractVideo() {
             const val = document.getElementById("urlInput").value.trim();
             const status = document.getElementById("status");
@@ -184,6 +205,7 @@ HTML = """<!DOCTYPE html>
                 status.innerText = "Error: " + err.message; status.style.color = "#ef4444";
             } finally {
                 btn.disabled = false;
+            document.getElementById("tipBox").style.display = "none";
             }
         }
     </script>
