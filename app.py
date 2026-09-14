@@ -64,10 +64,28 @@ HTML = """<!DOCTYPE html>
         .logo-text .sub-part { color: #0f172a; font-weight:800; }
         .logo-badge { font-size:10px; font-weight:800; background: linear-gradient(135deg, #f97316, #ea580c); color:#fff; padding:2px 6px; border-radius:6px; text-transform:uppercase; letter-spacing:0.8px; }
 
+    
+        .logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img-box { position: relative; display: flex; align-items: center; justify-content: center; }
+        .logo-img-box img { height: 42px; width: 42px; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(2, 132, 199, 0.25)); transition: transform 0.3s ease; }
+        .logo-img-box img:hover { transform: scale(1.05); }
+        .brand-title { display: flex; align-items: center; font-size: 24px; font-weight: 900; letter-spacing: -0.8px; line-height: 1; }
+        .brand-bili { background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .brand-save { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-left: 2px; }
+        .brand-pill { margin-left: 8px; font-size: 10px; font-weight: 800; background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.8px; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3); text-transform: uppercase; }
+
     </style>
 </head>
 <body>
-    <nav><div class="container nav-wrap"><a href="/" class="logo" style="display:flex;align-items:center;gap:10px;"><img src="/logo2.png" alt="BiliSnap HD Logo" style="height:38px;width:38px;object-fit:contain;border-radius:8px;"><div class="logo-text"><span class="main-part">Bili</span><span class="sub-part">Snap</span><span class="logo-badge">HD</span></div></a></div></nav>
+    <nav><div class="container nav-wrap"><a href="/" class="logo-wrap">
+            <div class="logo-img-box">
+                <img src="/logo2.png" alt="BiliSave Logo">
+            </div>
+            <div class="brand-title">
+                <span class="brand-bili">Bili</span><span class="brand-save">Save</span>
+                <span class="brand-pill">HD</span>
+            </div>
+        </a></div></nav>
     <section class="hero">
         <div class="container">
             <div class="hero-badge">Fastest Free Bilibili Video Downloader</div>
