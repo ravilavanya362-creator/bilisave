@@ -259,15 +259,7 @@ HTML = """<!DOCTYPE html>
                     </div>
                 </div>
             </div>
-        <div class="sec-title"><h2>Trending Guides & Bilibili Insights</h2><p>Latest articles and media tips.</p></div>
-        <div class="grid-3">
-            <div class="article-card"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600"><div><h4>Saving Exclusive Anime Overseas</h4><p>How fans watch and store official animations for flight trips.</p></div></div>
-            <div class="article-card"><img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600"><div><h4>Choreography Reference Editing</h4><p>Analyzing viral 60FPS dance rhythms to create engaging Shorts.</p></div></div>
-            <div class="article-card"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600"><div><h4>Archiving Open Source AI Benchmarks</h4><p>Why researchers rely on Bilibili for technical model explanations.</p></div></div>
-            <div class="article-card"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"><div><h4>Lecture Playlist Archiving</h4><p>How to download full university lectures for focused learning.</p></div></div>
-            <div class="article-card"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600"><div><h4>High Bitrate Gaming Highlights</h4><p>Extracting frame-perfect tournament replays in HD quality.</p></div></div>
-            <div class="article-card"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600"><div><h4>Safe Online Video Downloading</h4><p>Why direct encrypted CDN tunneling prevents intrusive redirects.</p></div></div>
-        </div>
+        
     </div>
     
 
