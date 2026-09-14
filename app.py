@@ -215,6 +215,87 @@ HTML = """<!DOCTYPE html>
         }
 
 
+    
+        .creator-box-section { max-width: 500px; margin: 30px auto 45px; padding: 0 16px; }
+        .creator-connect-card {
+            background: #ffffff;
+            border: 1.5px solid #f1f5f9;
+            border-radius: 28px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .creator-pill {
+            display: inline-block;
+            background: #fff1f2;
+            color: #f43f5e;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 999px;
+            margin-bottom: 18px;
+        }
+        .creator-avatar-badge {
+            width: 60px;
+            height: 60px;
+            background: #ffedd5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            margin-bottom: 14px;
+        }
+        .creator-name {
+            font-size: 20px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+        .creator-bio {
+            font-size: 13.5px;
+            color: #64748b;
+            margin-bottom: 22px;
+        }
+        .creator-links-row {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+        .creator-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #ffffff;
+            border: 1.5px solid #e2e8f0;
+            color: #0f172a;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02);
+            flex: 1;
+            max-width: 150px;
+        }
+        .creator-btn:hover {
+            border-color: #0284c7;
+            color: #0284c7;
+            transform: translateY(-2px);
+        }
+        .creator-btn-full {
+            max-width: 170px;
+        }
+
     </style>
 </head>
 <body>
