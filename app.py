@@ -2,10 +2,17 @@ import re, urllib.parse, requests
 from flask import Flask, request, jsonify, Response, stream_with_context
 
 app = Flask(__name__)
+from flask import send_file
+
+@app.route("/logo2.png")
+def serve_logo():
+    return send_file("/home/ubuntu/downloader/logo2.png", mimetype="image/png")
+
 
 HTML = """<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="/logo2.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiliSave - Best Free Bilibili Video Downloader Online (HD & MP4)</title>
@@ -54,7 +61,7 @@ HTML = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <nav><div class="container nav-wrap"><a href="/" class="logo"><i class="fa-solid fa-cloud-arrow-down"></i> Bili<span>Save</span></a></div></nav>
+    <nav><div class="container nav-wrap"><a href="/" class="logo" style="display:flex;align-items:center;gap:10px;"><img src="/logo2.png" alt="BiliSave Logo" style="height:38px;width:38px;object-fit:contain;border-radius:8px;">Bili<span>Save</span></a></div></nav>
     <section class="hero">
         <div class="container">
             <div class="hero-badge">Fastest Free Bilibili Video Downloader</div>
