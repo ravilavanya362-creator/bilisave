@@ -160,18 +160,60 @@ HTML = """<!DOCTYPE html>
         .art-link:hover { text-decoration: underline; }
 
     
+        
         .faq-section { max-width: 900px; margin: 0 auto; padding: 45px 16px; }
-        .faq-head { text-align: center; margin-bottom: 30px; }
-        .faq-head h2 { font-size: 28px; font-weight: 900; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.5px; }
+        .faq-head { text-align: center; margin-bottom: 28px; }
+        .faq-head h2 { font-size: 28px; font-weight: 900; color: #0f172a; margin-bottom: 8px; }
         .faq-head p { font-size: 14px; color: #64748b; margin: 0; }
         .faq-list { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
-        .faq-item { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; overflow: hidden; transition: all 0.25s ease; box-shadow: 0 2px 8px rgba(15,23,42,0.02); }
-        .faq-item.active { border-color: #0284c7; box-shadow: 0 8px 20px rgba(2, 132, 199, 0.08); }
-        .faq-question { padding: 18px 20px; font-size: 15.5px; font-weight: 700; color: #0f172a; display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; gap: 14px; }
-        .faq-question i { font-size: 14px; color: #0284c7; transition: transform 0.3s ease; }
-        .faq-item.active .faq-question i { transform: rotate(180deg); }
-        .faq-answer { display: none; padding: 0 20px 20px; font-size: 13.8px; color: #475569; line-height: 1.65; border-top: 1px solid #f1f5f9; padding-top: 14px; }
-        .faq-item.active .faq-answer { display: block; }
+        
+        details.faq-item {
+            background: #ffffff;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 8px rgba(15,23,42,0.02);
+        }
+        details.faq-item[open] {
+            border-color: #0284c7;
+            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.08);
+        }
+        summary.faq-question {
+            padding: 18px 20px;
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #0f172a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            list-style: none;
+            user-select: none;
+        }
+        summary.faq-question::-webkit-details-marker {
+            display: none;
+        }
+        summary.faq-question::after {
+            content: "078";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 14px;
+            color: #0284c7;
+            transition: transform 0.25s ease;
+        }
+        details.faq-item[open] summary.faq-question::after {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 20px 20px;
+            font-size: 13.8px;
+            color: #475569;
+            line-height: 1.65;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 14px;
+        }
+
 
     </style>
 </head>
@@ -415,71 +457,47 @@ HTML = """<!DOCTYPE html>
     </div>
     
     <div class="faq-list">
-        <!-- Q1 -->
-        <div class="faq-item active">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <span>How do I download Bilibili videos in 1080p HD?</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+        <details class="faq-item" open>
+            <summary class="faq-question">How do I download Bilibili videos in 1080p HD?</summary>
             <div class="faq-answer">
                 Simply copy the video URL from Bilibili (web or app), paste it into the search box above, and click <strong>Get Download Link</strong>. BiliSave automatically processes the stream and gives you a direct, high-speed 1080p HD MP4 download link with original synced audio.
             </div>
-        </div>
+        </details>
 
-        <!-- Q2 -->
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <span>Can I convert and extract audio (MP3) from Bilibili videos?</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+        <details class="faq-item">
+            <summary class="faq-question">Can I convert and extract audio (MP3) from Bilibili videos?</summary>
             <div class="faq-answer">
                 Yes! BiliSave preserves high-bitrate source audio streams. Once extracted, you can save the MP4 video directly or extract the audio track cleanly for podcasts, anime OSTs, and background music without quality degradation.
             </div>
-        </div>
+        </details>
 
-        <!-- Q3 -->
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <span>Do I need to install any software, app, or browser extension?</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+        <details class="faq-item">
+            <summary class="faq-question">Do I need to install any software, app, or browser extension?</summary>
             <div class="faq-answer">
                 No installation is required. BiliSave is a 100% cloud-based web tool that works seamlessly on mobile browsers (Chrome, Safari, Firefox) across Android, iOS, Windows, and Mac.
             </div>
-        </div>
+        </details>
 
-        <!-- Q4 -->
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <span>Does BiliSave support mobile b23.tv short links?</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+        <details class="faq-item">
+            <summary class="faq-question">Does BiliSave support mobile b23.tv short links?</summary>
             <div class="faq-answer">
                 Yes, our backend automatically follows and resolves <code>b23.tv</code> shortened share links from the Bilibili mobile application, so you can paste links directly without manual redirection.
             </div>
-        </div>
+        </details>
 
-        <!-- Q5 -->
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <span>Is downloading videos through BiliSave safe and watermark-free?</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+        <details class="faq-item">
+            <summary class="faq-question">Is downloading videos through BiliSave safe and watermark-free?</summary>
             <div class="faq-answer">
                 Absolutely. We utilize encrypted end-to-end CDN streaming tunnels with zero telemetry logging. Downloaded files are original source copies without added watermarks or intrusive ads.
             </div>
-        </div>
+        </details>
 
-        <!-- Q6 -->
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <span>Where are downloaded files saved on my device?</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+        <details class="faq-item">
+            <summary class="faq-question">Where are downloaded files saved on my device?</summary>
             <div class="faq-answer">
                 On mobile devices (Android & iPhone), videos are saved to your browser’s default <strong>Downloads</strong> folder or Files app. On desktop/PC, they appear in your system <strong>Downloads</strong> directory.
             </div>
-        </div>
+        </details>
     </div>
 </section>
 
